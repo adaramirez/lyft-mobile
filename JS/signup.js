@@ -4,6 +4,7 @@ $(document).ready(function () {
   var $phone = $('#phone-input');
   var $next = $('#next-button');
 
+
   // Creating an event for each flag
   $flagSelect.on('click', function () {
     var $valueSelect = $(this).data('code');
@@ -66,15 +67,16 @@ $(document).ready(function () {
     $('input[type=text]').keyup(doCheck).focusout(doCheck);
   });
 
+
   // Function to enable the "next button"
-  function enabledButton() {
-    $next.prop('disabled', false);
-  }
+  // function enabledButton() {
+  //   $next.prop('enabled', false);
+  // }
 
   // Function to disable the "next button"
-  function disabledButton() {
-    $next.prop('disabled', true);
-  }
+  // function disabledButton() {
+  //   $next.prop('disabled', true);
+  // }
 
   //Second try to disable/enable the next button.
   // $('#phone-input').toggle(
@@ -87,14 +89,16 @@ $(document).ready(function () {
   //     $('#next-button').removeAttr("disabled")
   //   });
 
-
-
-
 //Function to generate a random code 
-function codeGenerator() {
-  var digitOne = Math.floor(Math.random() * 9);
-  var digitTwo = Math.floor(Math.random() * 9);
-  var digitThree = Math.floor(Math.random() * 9);
-  var randomCode = '' + digitOne + digitTwo + digitThree;
-  return randomCode;
-}
+  function codeGenerator(){
+    var digitOne = Math.floor(Math.random() * 9);
+    var digitTwo = Math.floor(Math.random() * 9);
+    var digitThree = Math.floor(Math.random() * 9);
+    var randomCode = '' + digitOne + digitTwo + digitThree;
+    return randomCode;
+    }
+
+  })
+
+
+
