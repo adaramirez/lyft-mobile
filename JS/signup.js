@@ -50,16 +50,45 @@ $(document).ready(function () {
     window.location.href = 'verification.html';
   });
 
-  //Function to enable the "next button"
+
+  function doCheck() {
+    var allFilled = true;
+    $('input[type=text]').each(function () {
+      if ($(this).val() == '') {
+        allFilled = false;
+        return false;
+      }
+    });
+    $('input[type=submit]').prop('disabled', !allFilled);
+  }
+
+  $(document).ready(function () {
+    $('input[type=text]').keyup(doCheck).focusout(doCheck);
+  });
+
+  // Function to enable the "next button"
   function enabledButton() {
     $next.prop('disabled', false);
-    $next.addClass('grad-btn');
   }
+
   // Function to disable the "next button"
   function disabledButton() {
     $next.prop('disabled', true);
   }
-});
+
+  //Second try to disable/enable the next button.
+  // $('#phone-input').toggle(
+  //   function()
+  //   {
+  //     $('#next-button').attr("disabled");
+  //   },
+  //   function()
+  //   {
+  //     $('#next-button').removeAttr("disabled")
+  //   });
+
+
+
 
 //Function to generate a random code 
 function codeGenerator() {
