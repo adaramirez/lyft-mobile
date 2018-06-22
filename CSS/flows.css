@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* all */
+.container-flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.container-flex-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* The White Logo */
+.lyft-lyfe {
+    display:block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;  
+}
+
+.background {
+    background-image: url('../assets/images/flowsBackground.jpg');
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+}
+
+.btn-group{
+    display:inline-block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
