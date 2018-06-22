@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lyft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--BOOSTRAP CSS FILE-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!--LOCAL CSS FILE-->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/verification.css" />
+
+</head>
+
+<body>
+    <section id="verfication">
+        <div class="col-xs-2">
+            <div class="back-button">
+                <a href="signup.html" class="btn btn-info">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div>
+        <form class="container-flex-columns text-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <h1>Verify your phone number</h1>
+                    <br>
+                    <h4>Join now for free ride credit</h4>
+                    <hr>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="input-group">
+                            <div class="input-group-addon">LAB-</div>
+                            <br>
+                            <input type="code" class="form-control" id="code-input" placeholder="Code" maxlength="3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <br>
+                    <p>Enter the code sent</p>
+                    <button type="button" class="btn btn-default btn-lg btn-reset" id="reset-button">Resend Code</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 container-flex-columns next text-center">
+                <a class="btn btn-lg" href="signupform.html" role="button" disabled="true" id="next-button">Next</a>
+            </div>
+        </form>
+    </section>
+    
+
+    <!--JQuery-->
+    <script src="JS/jquery-3.3.1.js"></script>
+    <!--POPPER-->
+    <script src="JS/popper.min.js"></script>
+    <!--BOOSTRAP JS FILE-->
+    <script src="JS/bootstrap.min.js"></script>
+    <!--SWEET ALERT-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Local JS document-->
+    <script src="JS/verification.js"></script>
+</body>
+
+</html>
