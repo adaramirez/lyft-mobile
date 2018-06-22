@@ -1,0 +1,41 @@
+
+
+/*Back Button*/
+a.btn.btn-info{
+    background-color:#7417c9;
+    border: none;
+    margin: 1em;
+    height: 4vh;
+    width: 8vw;
+}
+
+
+/*Content*/
+.container-flex-columns{
+    padding:3em 1em;
+}
+
+/*Flags Button*/
+button.btn.dropdown-toggle{
+    background-color: #ff00be;
+}
+
+/*Yellow Background*/
+#sign-up {
+    background-image: url('../assets/images/whiteCar.jpg');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*Next Button*/
+a.btn{
+    background-color: #ff00be;
+    color:white;
+}
+
+/*Flags Icons*/
+img{
+    width: 12vw;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lyft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--BOOSTRAP CSS FILE-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!--LOCAL CSS FILE-->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/signup.css" />
+    
+</head>
+<body>
+    <section id="sign-up">
+        <div class="col-xs-offset-0 col-xs-1">
+            <div class="back-button">
+                <a href="flows.html" class="btn btn-info">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div>
+        <form class="container-flex-columns text-center">
+            <h2>Sign Up</h3>
+            <h5>Join now for free ride credit</h5>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 container-flex-columns sign text-center">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li data-code="ARG">
+                                        <a class="dropdown-item" href="#">
+                                        <img src="assets/images/argentina-flag-icon-256.png" class="country-flag" alt="Argentina-Flag">
+                                        </a>
+                                    </li>
+                                    <li data-code="GT">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/images/guatemala-flag-icon-256.png" class="country-flag" alt="Guatemala-Flag">
+                                        </a>
+                                    </li>
+                                    <li data-code="MEX">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/images/mexFlag.png" class="country-flag" alt="Mexico-Flag">
+                                        </a>
+                                    </li>
+                                    <li data-code="UK">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/images/united-kingdom-flag-icon-256.png" class="country-flag" alt="UK-Flag">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="phone" class="form-control" id="phone-input" placeholder="Phone" maxlength="11">
+                        </div>
+                        <br>
+                        <h7>We'll send you a text message to verify your phone</h5>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 container-flex-columns next text-center">
+                        <a class="btn btn-lg" href="verification.html" role="button" disabled="true" id="next-button">Next</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    
+
+    <!--JQuery-->
+    <script src="JS/jquery-3.3.1.js"></script>
+    <!--POPPER-->
+    <script src="JS/popper.min.js"></script>
+    <!--BOOSTRAP JS FILE-->
+    <script src="JS/bootstrap.min.js"></script>
+    <!--SWEET ALERT-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Local JS document-->
+    <script src="JS/signup.js"></script>
+</body>
+</html>
